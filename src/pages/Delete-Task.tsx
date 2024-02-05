@@ -13,8 +13,6 @@ const defaultTheme = createTheme();
 function DeleteTask() {
     const { taskID } = MyTaskContext();
 
-    console.log(taskID)
-
     return (
         <ThemeProvider theme={defaultTheme}>
             <Modaldelete isInitOpen={true} id={taskID}/>
